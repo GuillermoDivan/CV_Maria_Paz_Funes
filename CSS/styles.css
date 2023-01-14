@@ -1,7 +1,11 @@
 /** Definir si fondo con gradiente de color o imagen nubes pastel.
+
 Revisar el Responsive Web Design.
-Ver el conflicto entre el bloque aside a la derecha y el título 'formación'
-que se centra a eso y no a la página. */
+
+Recordar: utilizar 'display: flex' en reemplazo del float. El problema entre el borde y el centrado del título
+se resolvió generando un /div con class de bloque! Y así también se centraron los items de la lista desordenada
+
+Chusmear 'display: grid' también.*/
 
 body {background: #310F2F;
     background: -moz-linear-gradient(left, #310F2F 0%, #922E62 22%, #0B0210 100%);
@@ -11,18 +15,17 @@ body {background: #310F2F;
 header, section {border-bottom: 5px double #A43E97;} 
 header, #PerfilProfesional, #DatosPersonales, #ExperienciaProfesionalTitulo, #Formacion,
 #AptitudesRelevantes, #Voluntariados {text-align: center;}   
-#ExperienciaProfesionalTitulo {border: none;}
-#Formacion {border-top: 5px double #A43E97; float: none;}
+#ExperienciaProfesionalTitulo, #Voluntariados {border: none;}
+#Formacion {border-top: 5px double #A43E97;}
 #Subtitulo {color: rgb(218, 196, 218); font-style: normal;}
 #Frase {font-weight:lighter; font-style: oblique; text-decoration: underline; text-decoration-thickness: 2px; margin: 5px 0.1px 0.1px 0.1px}
 #Autorx {font-weight:lighter; font-style: oblique; margin: 0.1px 0.1px 5px 0.1px; text-align: right;}
 .Prelistado {text-decoration: underline;}
-.ExperienciaProfesional1 {float: left; padding-right: 30px; width: 50%; border: none;}
-.ExperienciaProfesional2 {float: left; padding-left: 30px; width: 100%; border: none;}
+.ExperienciaProfesional1 {padding-right: 30px;}
+.ExperienciaProfesional2 {padding-left: 30px;}
 .EspacioNecesarioHorizontal {padding-top: 25px;}
 .ColorLi {color: rgb(202, 124, 146); font-weight: bold; font-family: Georgia; font-size: 25;}
-.bloque {display: inline-block;}
-.centrado {text-align: center;}
+.bloque {display: flex;}
 
 /**Tener en cuenta que, en caso de más de una página web, hubiera convenido generar clases en lugar de 
 aplicar propiedades de modo tan general. */
