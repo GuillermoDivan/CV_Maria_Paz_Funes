@@ -28,7 +28,7 @@ header, #PerfilProfesional, #DatosPersonales, #ExperienciaProfesionalTitulo, #Fo
 .ColorLi {color: rgb(202, 124, 146); font-weight: bold; font-family: Georgia; font-size: 25; 
     margin: 25px 25px 15px;}
 .Bloque {display: flex;}
-.Frase {font-weight:lighter; font-style: oblique; text-decoration: underline; text-decoration-thickness: 2px; 
+.Frase {font-weight:lighter; font-style: oblique; text-decoration:underline; text-decoration-thickness:3px; 
     margin: 5px 0.1px 0.1px 0.1px; text-align: center;}
 .EstiloDeBoton {color: rgb(255, 255, 255); font-size: 22px; line-height: 22px; padding: 6px; 
     border-radius: 50px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; 
@@ -45,6 +45,6 @@ h2 {color: rgb(167, 119, 211); font-weight: bold; font-family: Georgia; margin: 
 h3 {color: rgb(167, 119, 211);  font-family: 'Lucida Sans Regular'; font-size: 35px; text-align: center; margin: 0.1px 0.5px 0.1px}
 li {color: rgb(202, 124, 146); font-weight: bold; font-family: Georgia; font-size: 25; line-height: 25px}
 p {color: rgb(135, 117, 149); font-family: 'Roboto', sans-serif; font-size: 22px; margin: 5px 25px 15px}
-aside {border: none}
-
+aside {border: none;}
+img {Border: 3px solid black; border-radius: 50%;}
 a, a:visited, a:hover, a:active {color: inherit;}
