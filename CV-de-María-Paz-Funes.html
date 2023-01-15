@@ -39,9 +39,8 @@
     <p> ♀ Pronombres preferidos: ella | she, her, her. </p>
     <p> ◎ Fecha de nacimiento: 15/05/1990 </p>
     <p> ☏ 351-1234567 </p>
-    <p> ✉ maria.paz.funes@example.com </p> <p class="BotonDeContacto">¡Contactame!</p>
-    <!--BUSCAR MAILTO PARA JS CUANDO QUIERA HACER EL BOTÓN DE 'CONTACTAME'-->
-    
+    <p> ✉ maria.paz.funes@example.com </p> 
+    <p class="EstiloDeBoton"><a href="mailto:maria.paz.funes@example.com">¡Contactame!</a></p>  
     </section>
 
     <section id="PerfilProfesional">
@@ -203,10 +202,19 @@
         title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media;
         gyroscope; picture-in-picture; web-share" allowfullscreen class="EspacioNecesarioHorizontal"
         alt="Video de María Paz Funes explicando la importancia de la formación de lx enfermerx en geriatría"></iframe>
+        
+        <p class="ColorLi">✲ Además, publiqué un artículo sobre la temática en la revista científica
+        Medical Topics Journaling, del mes de octubre de 2019.
+        <a target="_blank" href="https://scielo.isciii.es/pdf/geroko/v23n2/comunicacion1.pdf" download> ¡Descarga aquí!</a></p>
     </section>
 
     <footer>
-    <h3 class="EspacioNecesarioHorizontal">¡Gracias por tu tiempo! ¡Que tengas un hermoso día!</h3>
+        <h3 id="CambiarTexto"> Antes de que te vayas...</p>
+        <p class="EstiloDeBoton"><a id="BotonDeDespedida">Hacer click aquí</a></p>
+        <script> document.getElementById('BotonDeDespedida').onclick=function() {
+            document.getElementById("CambiarTexto").innerHTML = 
+            "¡Gracias por tu tiempo! ¡Que tengas un hermoso día!"}
+        </script>
     </footer>
 </body>
 </html>
