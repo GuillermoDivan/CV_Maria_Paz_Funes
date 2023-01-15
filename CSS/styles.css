@@ -23,8 +23,8 @@ header, #PerfilProfesional, #DatosPersonales, #ExperienciaProfesionalTitulo, #Fo
 .Prelistado {text-decoration: underline;}
 .ExperienciaProfesional1 {padding-right: 30px;}
 .ExperienciaProfesional2 {padding-left: 30px;}
-.EspacioNecesarioHorizontal {padding-top: 25px;}
-.ColorLi {color: rgb(202, 124, 146); font-weight: bold; font-family: Georgia; font-size: 25;}
+.EspacioNecesarioHorizontal {margin-top: 50px;}
+.ColorLi {color: rgb(202, 124, 146); font-weight: bold; font-family: Georgia; font-size: 25; margin: 25px 25px 15px;}
 .Bloque {display: flex;}
 .Frase {font-weight:lighter; font-style: oblique; text-decoration: underline; text-decoration-thickness: 2px; margin: 5px 0.1px 0.1px 0.1px; text-align: center;}
 
