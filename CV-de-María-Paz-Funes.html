@@ -21,7 +21,7 @@
 </head>
 
 
-<body>
+<body class="BodyGradiente">
     <!--Desarrollo del CV. Inclusión de la imagen desde hipervínculo. Generar una vista donde toda la info excepto 
         la experiencia profesional quede centrada arriba. 
         Generar división en columnas de igual tamaño para la experiencia profesional poniendo arriba a la izquierda 
@@ -201,14 +201,27 @@
         <a target="_blank" href="https://scielo.isciii.es/pdf/geroko/v23n2/comunicacion1.pdf" download> ¡Descarga aquí!</a></p>
     </section>
 
-    <footer>
+    <section>
         <h3 id="CambiarTexto"> Antes de que te vayas...</p>
         <p class="EstiloDeBoton"><a id="BotonDeDespedida">Hacer click aquí</a></p>
         <script> document.getElementById('BotonDeDespedida').onclick=function() {
             document.getElementById("CambiarTexto").innerHTML = 
             "¡Gracias por tu tiempo! ¡Que tengas un hermoso día!"}
         </script>
+    </section>
+
+    <footer>
+        <p class="EstiloDeBoton"><a id="BotonFondoNegro">Activar Fondo Negro</a></p>
+        <script> document.getElementById('BotonFondoNegro').addEventListener('click', function() {
+        document.body.className='BodyNegro';})
+        </script>
+
+        <p class="EstiloDeBoton"><a id="BotonFondoVioleta">Restablecer Fondo</a></p>
+        <script> document.getElementById('BotonFondoVioleta').addEventListener('click', function() {
+        document.body.className='BodyGradiente';})
+        </script>
     </footer>
+
 </body>
 </html>
 

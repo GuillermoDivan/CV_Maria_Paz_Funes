@@ -7,44 +7,163 @@ se resolvió generando un /div con class de bloque! Y así también se centraron
 
 Chusmear 'display: grid' también.*/
 
-body {background: #310F2F;
-    background: -moz-linear-gradient(left, #310F2F 0%, #922E62 22%, #0B0210 100%);
-    background: -webkit-linear-gradient(left, #310F2F 0%, #922E62 22%, #0B0210 100%);
-    background: linear-gradient(to right, #310F2F 0%, #922E62 22%, #0B0210 100%);}
-
-* {box-sizing: border-box;}
-header, section {border-bottom: 5px double #A43E97; margin-bottom: 15px} 
-header, #PerfilProfesional, #DatosPersonales, #ExperienciaProfesionalTitulo, #Formacion,
-#AptitudesRelevantes, #Voluntariados {text-align: center;}   
-#ExperienciaProfesionalTitulo, footer {border: none; margin-bottom: 10px}
-#PerfilProfesional {padding-bottom: 15px}
-#Formacion {border-top: 5px double #A43E97;}
-#Subtitulo {color: rgb(218, 196, 218); font-style: normal;}
-#Autorx {font-weight:lighter; font-style: oblique; margin: 0.1px 0.1px 5px 0.1px; text-align: right;}
-.Prelistado {text-decoration: underline;}
-.ExperienciaProfesional1 {padding-right: 30px;}
-.ExperienciaProfesional2 {padding-left: 30px;}
-.EspacioNecesarioHorizontal {margin-top: 50px;}
-.ColorLi {color: rgb(202, 124, 146); font-weight: bold; font-family: Georgia; font-size: 25; 
-    margin: 25px 25px 15px;}
-.Bloque {display: flex;}
-.Frase {font-weight:lighter; font-style: oblique; text-decoration:underline; text-decoration-thickness:3px; 
-    margin: 5px 0.1px 0.1px 0.1px; text-align: center;}
-.EstiloDeBoton {color: rgb(255, 255, 255); font-size: 22px; line-height: 22px; padding: 6px; 
-    border-radius: 50px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; 
-    font-style: normal; font-variant: normal; text-transform: none; 
-    background-image: solid rgb(228, 125, 228); box-shadow: rgb(0, 0, 0) 2px 2px 2px; 
-    border: 3px solid rgb(15, 18, 19); margin: 25px 2px 30px; display: inline-block;}
-    .EstiloDeBoton:hover {background: #e629ba;}
-    .EstiloDeBoton:active {background: #da7b9e;}
+* {
+  box-sizing: border-box;
+}
+header,
+section {
+  border-bottom: 5px double #a43e97;
+  margin-bottom: 15px;
+}
+header,
+footer,
+#PerfilProfesional,
+#DatosPersonales,
+#ExperienciaProfesionalTitulo,
+#Formacion,
+#AptitudesRelevantes,
+#Voluntariados {
+  text-align: center;
+}
+#ExperienciaProfesionalTitulo,
+footer {
+  border: none;
+  margin-bottom: 10px;
+}
+#PerfilProfesional {
+  padding-bottom: 15px;
+}
+#Formacion {
+  border-top: 5px double #a43e97;
+}
+#Subtitulo {
+  color: rgb(218, 196, 218);
+  font-style: normal;
+}
+#Autorx {
+  font-weight: lighter;
+  font-style: oblique;
+  margin: 0.1px 0.1px 5px 0.1px;
+  text-align: right;
+}
+.Prelistado {
+  text-decoration: underline;
+}
+.ExperienciaProfesional1 {
+  padding-right: 30px;
+}
+.ExperienciaProfesional2 {
+  padding-left: 30px;
+}
+.EspacioNecesarioHorizontal {
+  margin-top: 50px;
+}
+.ColorLi {
+  color: rgb(202, 124, 146);
+  font-weight: bold;
+  font-family: Georgia;
+  font-size: 25;
+  margin: 25px 25px 15px;
+}
+.Bloque {
+  display: flex;
+}
+.Frase {
+  font-weight: lighter;
+  font-style: oblique;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  margin: 5px 0.1px 0.1px 0.1px;
+  text-align: center;
+}
+.EstiloDeBoton {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  line-height: 22px;
+  padding: 6px;
+  border-radius: 50px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: solid rgb(228, 125, 228);
+  box-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  border: 3px solid rgb(15, 18, 19);
+  margin: 25px 2px 30px;
+  display: inline-block;
+}
+.EstiloDeBoton:hover {
+  background: #e629ba;
+}
+.EstiloDeBoton:active {
+  background: #da7b9e;
+}
 
 /**Tener en cuenta que, en caso de más de una página web, hubiera convenido generar clases en lugar de 
 aplicar propiedades de modo tan general. */
-h1 {color: rgb(218, 196, 218); font-weight: bolder; font-family: 'Lucida Sans'; margin: 3px 2px 3px 2px; font-size: 75px;}
-h2 {color: rgb(167, 119, 211); font-weight: bold; font-family: Georgia; margin: 3px 2px 8px 2px; font-size: 50px; font-style: oblique;}
-h3 {color: rgb(167, 119, 211);  font-family: 'Lucida Sans Regular'; font-size: 35px; text-align: center; margin: 0.1px 0.5px 0.1px}
-li {color: rgb(202, 124, 146); font-weight: bold; font-family: Georgia; font-size: 25; line-height: 25px}
-p {color: rgb(135, 117, 149); font-family: 'Roboto', sans-serif; font-size: 22px; margin: 5px 25px 15px}
-aside {border: none;}
-img {Border: 3px solid black; border-radius: 50%;}
-a, a:visited, a:hover, a:active {color: inherit;}
+h1 {
+  color: rgb(218, 196, 218);
+  font-weight: bolder;
+  font-family: "Lucida Sans";
+  margin: 3px 2px 3px 2px;
+  font-size: 75px;
+}
+h2 {
+  color: rgb(167, 119, 211);
+  font-weight: bold;
+  font-family: Georgia;
+  margin: 3px 2px 8px 2px;
+  font-size: 50px;
+  font-style: oblique;
+}
+h3 {
+  color: rgb(167, 119, 211);
+  font-family: "Lucida Sans Regular";
+  font-size: 35px;
+  text-align: center;
+  margin: 0.1px 0.5px 0.1px;
+}
+li {
+  color: rgb(202, 124, 146);
+  font-weight: bold;
+  font-family: Georgia;
+  font-size: 25;
+  line-height: 25px;
+}
+p {
+  color: rgb(135, 117, 149);
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  margin: 5px 25px 15px;
+}
+aside {
+  border: none;
+}
+img {
+  border: 3px solid black;
+  border-radius: 50%;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+.BodyGradiente {
+  background: #310f2f;
+  background: -moz-linear-gradient(left, #310f2f 0%, #922e62 22%, #0b0210 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #310f2f 0%,
+    #922e62 22%,
+    #0b0210 100%
+  );
+  background: linear-gradient(to right, #310f2f 0%, #922e62 22%, #0b0210 100%);
+}
+
+.BodyNegro {
+  background: rgb(0, 0, 0);
+}
